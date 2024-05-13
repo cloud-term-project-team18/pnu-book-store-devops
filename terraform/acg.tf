@@ -4,23 +4,23 @@ resource "ncloud_access_control_group" "acg" {
 }
 
 resource "ncloud_access_control_group_rule" "acg-rule" {
-    access_controll_group_no    = ncloud_access_control_group.acg.id
+    access_control_group_no    = ncloud_access_control_group.acg.id
 
     inbound {
         protocol        = "TCP"
         ip_block        = "0.0.0.0/0"
-        port            = "443"
+        port_range      = "443"
     }
 
     inbound {
         protocol        = "TCP"
         ip_block        = "0.0.0.0/0"
-        port            = "80"
+        port_range      = "80"
     }
 
     outbound { 
         protocol        = "TCP"
         ip_block        = "0.0.0.0/0"
-        port            = "1-65535"
+        port_range      = "1-65535"
     }
 }
