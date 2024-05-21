@@ -2,6 +2,9 @@
 clusterName: "elasticsearch"
 nodeGroup: "master"
 
+secret:
+  password: qwer1234
+
 # 노드 역할 설정
 roles:
   - master
@@ -13,6 +16,11 @@ replicas: 1
 
 # JVM 옵션 설정
 esJavaOpts: "-Xmx1g -Xms1g"
+
+esConfig:
+  elasticsearch.yml: |
+    xpack.security.enabled: true
+    xpack.monitoring.collection.enabled: true
 
 # 리소스 요청 및 제한 설정
 resources:
