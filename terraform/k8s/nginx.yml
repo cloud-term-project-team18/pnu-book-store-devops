@@ -35,7 +35,8 @@ spec:
             cpu: "500m"
       volumes:
       - name: nginx-logs
-        emptyDir: {}
+        hostPath:
+          path: /var/log/nginx
       - name: nginx-config
         configMap:
           name: nginx-config
