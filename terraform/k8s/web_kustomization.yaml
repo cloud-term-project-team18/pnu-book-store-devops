@@ -1,4 +1,0 @@
-namespace: web-namespace
-resources: 
-  - nginx.yaml
-  # - backend.yaml

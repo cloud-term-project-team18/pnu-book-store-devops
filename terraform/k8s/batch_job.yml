@@ -16,4 +16,3 @@ spec:
             - secretRef:
                 name: database-secret
       restartPolicy: OnFailure
-    
