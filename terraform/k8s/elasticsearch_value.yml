@@ -3,11 +3,7 @@ clusterName: "elasticsearch"
 nodeGroup: "master"
 
 secret:
-  password: 
-    valueFrom:
-      secretKeyRef:
-        name: elastic-secret
-        key: ELASTICSEARCH_PASSWORD
+  password: qwer1234
 
 # 노드 역할 설정
 roles:
