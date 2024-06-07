@@ -4,7 +4,7 @@ namespace: web
 images:
 - name: jotunlmn.kr.private-ncr.ntruss.com/docker-pnu-bookstore-spring
   newName: jotunlmn.kr.private-ncr.ntruss.com/docker-pnu-bookstore-spring
-  newTag: 1f117e2b3a75941919f0cbad625a473fdf8f94b9
+  newTag: 8d4d11f58e70d9ff2673ad974c430cd3dfab9591
 resources:
 - backend.yml
 - backend_ingress.yml
